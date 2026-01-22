@@ -1,8 +1,6 @@
 # Finance Tracker
 
-I was mass-applying to jobs and needed a solid full-stack project for my portfolio. Also I was genuinely annoyed at having 5 different banking apps just to see where my money went. Mint died, YNAB wants $100/year, and I thought "how hard can it be?"
-
-Turns out: pretty hard. But I learned a ton about microservices, JWT auth, and why everyone complains about Kubernetes. This is definitely overengineered for a personal finance app - I could've done this with a single Express server and SQLite. But where's the fun in that?
+I learned a ton about microservices, JWT auth, and why everyone complains about Kubernetes. This is definitely overengineered for a personal finance app - I could've done this with a single Express server and SQLite. But where's the fun in that?
 
 ## What it actually does
 
@@ -11,7 +9,7 @@ Turns out: pretty hard. But I learned a ton about microservices, JWT auth, and w
 - **Budget alerts** - sends you a warning when you're about to blow your budget
 - **Savings goals** - set a target, track progress, feel good about yourself
 
-## Architecture (yes it's overkill, fight me)
+## Architecture 
 
 ```
                          ┌─────────────────┐
