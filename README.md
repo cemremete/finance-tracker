@@ -137,6 +137,3 @@ Transaction stuff:
 
 If you actually want to contribute to this, cool. I'm not picky about code style as long as it works and I can understand it.
 
-## License
-
-MIT - do whatever you want with it
