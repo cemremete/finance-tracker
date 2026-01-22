@@ -1,0 +1,31 @@
+# deps
+node_modules
+npm-debug.log
+
+# tests
+tests
+coverage
+*.test.js
+
+# dev files
+.env
+.env.*
+.eslintrc.js
+.prettierrc
+nodemon.json
+
+# git
+.git
+.gitignore
+
+# docs
+README.md
+*.md
+
+# ide
+.vscode
+.idea
+
+# os
+.DS_Store
+Thumbs.db

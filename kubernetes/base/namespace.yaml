@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: finance-tracker
+  labels:
+    app.kubernetes.io/name: finance-tracker
+    app.kubernetes.io/managed-by: kubectl

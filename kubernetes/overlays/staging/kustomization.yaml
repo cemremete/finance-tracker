@@ -1,0 +1,30 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+metadata:
+  name: finance-tracker-staging
+
+namespace: finance-tracker-staging
+
+resources:
+  - ../../base
+
+commonLabels:
+  environment: staging
+
+patches:
+  # Keep 2 replicas for staging
+  - patch: |-
+      - op: replace
+        path: /spec/replicas
+        value: 2
+    target:
+      kind: Deployment
+      name: auth-service
+
+configMapGenerator:
+  - name: auth-service-config
+    behavior: merge
+    literals:
+      - NODE_ENV=staging
+      - LOG_LEVEL=info
